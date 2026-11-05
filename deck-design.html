@@ -109,7 +109,7 @@ html,body{word-break:auto-phrase;line-break:strict}
 .s.panel .steps{grid-template-columns:repeat(2,1fr);row-gap:18px}
 .s.panel .steps div{padding-top:12px}
 
-@media (max-width:760px){
+@media screen and (max-width:760px){
  html,body{overflow:auto;height:auto;background:#0f1113}
  #view{position:static;display:block}
  #deck{width:100%;height:auto;transform:none!important;position:static}
@@ -134,6 +134,17 @@ html,body{word-break:auto-phrase;line-break:strict}
  .chips span{font-size:14px;padding:6px 12px}
  #hud{display:none}
 }
+
+.mx{display:grid;gap:12px;min-width:0}
+.mx .pp{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mx .pp figure{margin:0}
+.mx .pp img{width:100%!important;height:250px!important;object-fit:cover;display:block}
+.mx figcaption{font:400 11px var(--font-en);letter-spacing:.12em;color:var(--steel-500);margin-top:5px}
+.logos5{grid-template-columns:repeat(5,1fr)!important;gap:8px}
+.logos5 div{height:52px!important;padding:6px 10px!important;overflow:hidden}.split .logos5 img{max-height:38px!important;max-width:86%!important}
+.soft{border:1px solid var(--steel-200);border-left:3px solid var(--oak);background:var(--white);padding:14px 18px;margin-top:22px;font-size:16px;line-height:1.8}
+.soft .en{margin-bottom:4px}
+@media screen and (max-width:760px){.mx .pp img{height:190px!important}.logos5{grid-template-columns:repeat(3,1fr)!important}}
 </style>
 </head>
 <body>
@@ -230,12 +241,16 @@ html,body{word-break:auto-phrase;line-break:strict}
 
 <!-- 8 -->
 <section class="s">
-  <div class="split" style="grid-template-columns:.9fr 1.1fr;gap:40px"><div>
+  <div class="split" style="grid-template-columns:.85fr 1.15fr;gap:40px"><div>
     <div class="dim en"><i>07</i> IMPORTED APPLIANCES</div>
     <h2 style="font-size:34px">輸入家電を、<br>設計の自由度のまま。</h2>
-    <p class="lead" style="font-size:18px">海外ブランドのオーブン・食洗機など。<span class="nw">施主支給や、</span><span class="nw">特定メーカーへの差し替えに</span><span class="nw">対応します。</span><br><br>機器から決めたい案件は、早い段階でご相談ください。</p>
+    <p class="lead" style="font-size:18px">海外ブランドのオーブン・食洗機など。施主支給や、特定メーカーへの差し替えに対応します。機器から決めたい案件は、早い段階でご相談ください。</p>
+    <div class="soft"><div class="en">MICS. SUPPORT</div>輸入家電をご採用の際は、販売エリアでの<b>①取扱説明</b>と<b>②アフターメンテナンス</b>にも、MICS.がしっかりと対応します。</div>
     <p class="note">機種ごとに、対応可否・寸法・電源を確認してご案内します。</p>
-  </div><div class="logos"><div><img src="img/mics/miele.jpg" alt="miele"></div><div><img src="img/mics/bosch.jpg" alt="bosch"></div><div><img src="img/mics/gaggenau.jpg" alt="gaggenau"></div><div><img src="img/mics/asko.jpg" alt="asko"></div><div><img src="img/mics/smeg.jpg" alt="smeg"></div><div><img src="img/mics/aeg.jpg" alt="aeg"></div><div><img src="img/mics/teka.jpg" alt="teka"></div><div><img src="img/mics/liebherr.jpg" alt="liebherr"></div><div><img src="img/mics/faber.jpg" alt="faber"></div><div><img src="img/mics/whirlpool.jpg" alt="whirlpool"></div><div><img src="img/mics/bertazzoni.jpg" alt="bertazzoni"></div><div><img src="img/mics/mabe.jpg" alt="mabe"></div><div><img src="img/mics/beko.jpg" alt="beko"></div></div></div>
+  </div><div class="mx">
+    <div class="pp"><figure><img src="img/mics_photo1.jpg" alt="ビルトインのオーブン"><figcaption>MICS. SHOWROOM</figcaption></figure><figure><img src="img/mics_photo2.jpg" alt="ビルトインの食洗機"><figcaption>MICS. SHOWROOM</figcaption></figure></div>
+    <div class="logos logos5"><div><img src="img/mics/miele.jpg" alt="miele"></div><div><img src="img/mics/bosch.jpg" alt="bosch"></div><div><img src="img/mics/gaggenau.jpg" alt="gaggenau"></div><div><img src="img/mics/asko.jpg" alt="asko"></div><div><img src="img/mics/smeg.jpg" alt="smeg"></div><div><img src="img/mics/aeg.jpg" alt="aeg"></div><div><img src="img/mics/teka.jpg" alt="teka"></div><div><img src="img/mics/liebherr.jpg" alt="liebherr"></div><div><img src="img/mics/faber.jpg" alt="faber"></div><div><img src="img/mics/whirlpool.jpg" alt="whirlpool"></div><div><img src="img/mics/bertazzoni.jpg" alt="bertazzoni"></div><div><img src="img/mics/mabe.jpg" alt="mabe"></div><div><img src="img/mics/beko.jpg" alt="beko"></div></div>
+  </div></div>
   <div class="fo"><span>SUMIHEI CORPORATION × YAJIMA / MICS.</span><span>08</span></div>
 </section>
 
